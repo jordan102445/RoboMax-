@@ -1,0 +1,16 @@
+Subject: New RoboMax demo booking - {{first_name}} {{last_name}}
+
+New RoboMax Outreach demo booking received.
+
+Name: {{first_name}} {{last_name}}
+Email: {{email}}
+Preferred date: {{preferred_date}}
+Preferred time: {{preferred_time}}
+Timezone: {{timezone}}
+Submitted: {{submitted_at}}
+
+Campaign image:
+{{asset_base_url}}/robomax-email-visual.jpeg
+
+Reply to confirm:
+{{email}}

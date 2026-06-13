@@ -1,0 +1,22 @@
+Subject: Your RoboMax Outreach demo booking is received
+
+Hi {{first_name}},
+
+Thanks for booking a RoboMax Outreach demo. We received your preferred time and will confirm the online call details shortly.
+
+Preferred date: {{preferred_date}}
+Preferred time: {{preferred_time}}
+Timezone: {{timezone}}
+
+What happens next:
+
+1. We review your preferred time and confirm the meeting slot.
+2. You receive the online call link and final calendar details.
+3. We show how RoboMax cleans, verifies, calls, texts, and qualifies leads.
+
+Add preferred time to calendar:
+{{calendar_link}}
+
+Need to change the time? Reply to this email.
+
+RoboMax Outreach

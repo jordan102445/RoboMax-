@@ -1,0 +1,33 @@
+Subject: Your RoboMax Outreach demo is booked
+
+Hi {{first_name}},
+
+Your online demo with RoboMax Outreach is confirmed.
+
+Date: {{meeting_date}}
+Time: {{meeting_time}} {{timezone}}
+Host: {{host_name}}
+Company: {{company_name}}
+
+Join the online call:
+{{meeting_link}}
+
+Add to calendar:
+{{calendar_link}}
+
+Need to change the time?
+{{reschedule_link}}
+
+What we will cover:
+
+1. How RoboMax cleans and verifies cold recruiting databases.
+2. How AI voice calls and SMS follow-ups qualify candidates.
+3. How your recruiters can focus only on real opportunities.
+
+No prep required. If you have a sample lead count, CRM/ATS name, or current outreach process, bring it to the call and we will tailor the demo around it.
+
+See you soon,
+{{host_name}}
+RoboMax Outreach
+
+Need help? Contact {{host_email}}

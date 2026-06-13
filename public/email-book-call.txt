@@ -1,0 +1,22 @@
+Subject: Quick online call about saving recruiter time?
+
+Hi {{first_name}},
+
+We would like to show you how RoboMax Outreach can help {{company_name}} stop wasting recruiter time on invalid, disconnected, unreachable, or unresponsive leads.
+
+On a short 20-minute online call, we can walk through:
+
+1. How AI verifies phone numbers and removes unreachable contacts.
+2. How AI voice calls and SMS follow-up qualify candidates automatically.
+3. How recruiters receive only real opportunities inside their workflow.
+
+Book an online call here:
+{{schedule_link}}
+
+If your team is calling old recruiting databases, disconnected numbers, and no-answer contacts, this call will show exactly where RoboMax can save recruiter time.
+
+Best,
+{{sender_name}}
+RoboMax Outreach
+
+Unsubscribe: {{unsubscribe_link}}

@@ -42,6 +42,15 @@ function getMissingEmailConfig() {
     .map(([key]) => key);
 }
 
+function getPublicEmailError(error) {
+  const code = error?.code || error?.responseCode || "unknown";
+  const message = String(error?.response || error?.message || "Unknown email error")
+    .replaceAll(SMTP_USER || "", "[smtp-user]")
+    .replaceAll(BOOKING_TO || "", "[booking-to]");
+
+  return `Email send failed (${code}): ${message}`;
+}
+
 function sanitize(value) {
   return String(value || "").trim();
 }
@@ -207,7 +216,7 @@ export default async function handler(req, res) {
   } catch (error) {
     console.error("Booking email error:", error);
     return res.status(500).json({
-      error: "The booking emails could not be sent. Check SMTP settings.",
+      error: getPublicEmailError(error),
     });
   }
 }

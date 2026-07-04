@@ -1,5 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/book-demo.js": {
+      "includeFiles": "public/**"
+    }
+  },
   "rewrites": [
     {
       "source": "/(.*)",

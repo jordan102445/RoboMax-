@@ -32,6 +32,16 @@ function getTransporter() {
   });
 }
 
+function getMissingEmailConfig() {
+  return [
+    ["BOOKING_TO", BOOKING_TO],
+    ["SMTP_USER", SMTP_USER],
+    ["SMTP_PASS", SMTP_PASS],
+  ]
+    .filter(([, value]) => !value)
+    .map(([key]) => key);
+}
+
 function sanitize(value) {
   return String(value || "").trim();
 }
@@ -130,8 +140,9 @@ export default async function handler(req, res) {
   const transporter = getTransporter();
 
   if (!transporter) {
+    const missing = getMissingEmailConfig();
     return res.status(500).json({
-      error: "Email server is not configured. Add BOOKING_TO, SMTP_USER, and SMTP_PASS in Vercel Environment Variables.",
+      error: `Email server is not configured. Missing on Vercel: ${missing.join(", ")}.`,
     });
   }
 
